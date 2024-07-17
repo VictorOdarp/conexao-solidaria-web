@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Lovelo";
+    src: url("fontes/Lovelo\ Black.otf") format("opentype"), url("fontes/Lovelo\ Line\ Bold.otf"), format("truetype"), url("fontes/Lovelo\ Line\ Light.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: "Lovelo"
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(94, 6, 6);
+    height: 8vh;
+}
+
+main{
+    background: url("imagens/conexão.png") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+.nav-list{
+    color: #5BC0EB;
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+body{
+    background-color: #b1cfd6;
+}
+
+@media (max-width: 999px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: #5e0606;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 1;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    
+    .mobile-menu{
+        display: block;
+    }
+}
+
+.nav-list.active{
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.container-button button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 80px;
+    position: absolute;
+    z-index: 0;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-doeAgora{
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: rgb(94, 6, 6);
+    border: 1px solid #b1cfd6;
+    border-radius: 50px;
+    color: white;
+    transition: 0.4s;
+    outline: 0;
+    font-family: "Lovelo";
+}
+
+.button-doeAgora:hover{
+    background-color: rgb(94, 6, 6);
+    color: #5BC0EB;
+    font-size: 30px;
+    box-shadow: 0px 4px 4px #5BC0EB;
+    border: 1px solid #5BC0EB;
+}
+
+@media (max-width: 999px){
+    .button-doeAgora{
+        width: 250px;
+        height: 40px;
+        background-size: cover;
+    }
+    .container-button{
+        width: 250px;
+        height: 40px;
+        display: flex;
+    }
+}
+
+.container-sobrenos{
+    text-align: center;
+    margin-top: 2%;
+    width: 60%;
+    height: 50px;
+    border-radius: 12px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.titulo-sobrenos{
+    font-family: "Lovelo";
+}
+
+.subtitulo-oquee{
+    font-family: "Lovelo";
+    font-size: 18px;
+}
+
+.container-sobrenos p {
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-cards h2{
+    font-family: "Lovelo";
+}
+
+.container-cards p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.container-cards {
+    position: static;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-cards .card {
+    width: 100%;
+    max-width: 308px;
+    position: relative;
+    height: 400px;
+    background-color: whitesmoke;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 8px #5BC0EB;
+    transition: 0.3s ease-in-out;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.container-cards .card .imgBx {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+}
+
+.container-cards .card .imgBx img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 3px solid #5BC0EB;
+}
+
+.container-doacoes{
+    text-align: center;
+    width: 50%;
+    height: 1px;
+    border-radius: 12px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.titulo-doacoes{
+    font-family: "Lovelo";
+}
+
+.subtitulo-objetivo{
+    font-family: "Lovelo";
+    font-size: 18px;
+}
+
+.container-doacoes p {
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-cards-doacoes h2{
+    font-family: "Lovelo";
+}
+
+.container-cards-doacoes p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.container-cards-doacoes {
+    position: static;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-cards-doacoes .card-doacoes {
+    width: 100%;
+    max-width: 308px;
+    position: relative;
+    height: 400px;
+    background-color: whitesmoke;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 8px #5e0606;
+    transition: 0.3s ease-in-out;
+    margin-top: 11%;
+    border-radius: 10px;
+}
+
+.container-cards-doacoes .card-doacoes .imgBx-doacoes {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+}
+
+.container-cards-doacoes .card-doacoes .imgBx-doacoes img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 3px solid #5e0606;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    
+    .container-cards-doacoes {
+        padding: 20px;
+        margin-top: 15%;
+    }
+
+    .container-cards-doacoes .card-doacoes {
+        margin: 20px 5px;
+        padding: 15px 10px;
+        margin-top: 10%;
+    }
+
+    .container-cards-doacoes .card-doacoes .imgBx {
+        width: 100%;
+        max-width: 200px;
+        height: 200px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-cards-doacoes {
+        padding: 10px;
+        margin-top: 10%;
+    }
+
+    .container-cards-doacoes .card-doacoes {
+        margin: 15px 5px;
+        padding: 10px 5px;
+    }
+
+    .container-cards-doacoes .card-doacoes .imgBx-doacoes {
+        width: 100%;
+        max-width: 150px;
+        height: 150px;
+        left: 5px;
+        top: -40px;
+    }
+}
+
+.container-instituicoes{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-instituicoes .card-instituicoes{
+    background-color: white;
+    max-width: 1500px;
+    display: flex;
+    padding: 30px 30px;
+    margin-top: 2%;
+    border-radius: 20px;
+    border: 5px solid rgb(94, 6, 6);
+}
+
+.container-instituicoes .card-instituicoes .img-instituicoes img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.container-instituicoes .card-instituicoes .img-instituicoes img:hover{
+    transform: scale(1.1);
+}
+
+.container-instituicoes h1{
+    text-align: center;
+    font-family: "Lovelo";
+}
+
+.container-instituicoes p{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-button-instituicoes button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.button-instituicoes{
+    background-color: rgb(94, 6, 6);
+    font-family: "Lovelo";
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.button-instituicoes:hover{
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    
+    .container-sobrenos{
+        padding: 50px;
+    }
+    .container-cards {
+        padding: 20px;
+    }
+
+    .container-instituicoes{
+        padding: 30px 10px;
+        margin-top: 10%;
+        max-width: 200%;
+    }
+
+    .container-cards .card {
+        margin: 20px 5px;
+        padding: 15px 10px;
+        margin-top: 10%;
+        height: 420px;
+    }
+
+    .container-cards .card .imgBx {
+        width: 120%;
+        max-width: 200px;
+        height: 200px;
+        left: 10px;
+    }
+
+    .container-instituicoes .card-instituicoes .img-instituicoes{
+        width: 100%;
+        max-width: 300px;
+        left: 50%;
+    }
+
+    .container-instituicoes .card-instituicoes .img-instituicoes img{
+        width: 30%;
+        height: 10%;
+    }
+
+    .container-instituicoes .card-instituicoes .img-instituicoes img:hover{
+        transform: scale(1.01);
+    }
+}
+
+@media (max-width: 480px) {
+    .container-cards {
+        padding: 10px;
+    }
+
+    .container-cards .card {
+        margin: 15px 5px;
+        padding: 10px 5px;
+    }
+
+    .container-cards .card .imgBx {
+        width: 100%;
+        max-width: 150px;
+        height: 150px;
+        left: 5px;
+        top: -40px;
+    }
+}
