@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 @font-face {
@@ -10,40 +12,77 @@
     font-style: normal;
 }
 
-
-
-.container-button button{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 500px;
-    height: 80px;
-    position: absolute;
-    top: 72%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
+body{
+    background-color: #b3cdd8;
 }
 
-.button-doeAgora{
-    padding: 15px 30px;
-    cursor: pointer;
-    font-size: 24px;
-    background-color: rgb(94, 6, 6);
-    border: 1px solid #b1cfd6;
-    border-radius: 50px;
-    color: white;
-    transition: 0.4s;
-    outline: 0;
+header{
+    background-color: #5e0606;
+    box-shadow: 0px 3px 10px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: whitesmoke;
     font-family: "Lovelo";
+    font-size: 20px;
 }
 
-.button-doeAgora:hover{
-    background-color: rgb(94, 6, 6);
-    color: #5BC0EB;
-    font-size: 30px;
-    box-shadow: 0px 4px 4px #5BC0EB;
-    border: 1px solid #5BC0EB;
+.nav-list{
+    display: flex;
+    align-items: center;
+    margin-right: 9%;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    font: 1.15rem;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.doe-button button{
+    border: none;
+    background-color: #5BC0EB;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.doe-button button a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+main img{
+    width: 100%;
 }
 
 .container-sobrenos{
@@ -211,7 +250,7 @@
 
 /* Media Queries */
 
-@media (max-width: 999px) {
+@media (max-width: 768px) {
 
     body{
         overflow-x: hidden;
@@ -235,9 +274,57 @@
         left: 10px;
     }
 
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .doe-button{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .doe-button{
+        display: block;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .mobile-menu .doe-button button{
+        width: 50%;
+    }
+
+    .open{
+        display: block;
+    }
+
 }
 
-@media (max-width: 999px) {
+@media (max-width: 468px) {
     
     .container-doacoes{
         margin-top: 2%;
@@ -271,9 +358,12 @@
 }
 
 .container-titulo-instituicoes{
-    font-family: "Lovelo";
     font-size: 14px;
     text-align: center;
+}
+
+.container-titulo-instituicoes .subtitulo-objetivo-instituicoes{
+    font-family: "Lovelo";
 }
 
 .container-instituicoes{
@@ -351,7 +441,7 @@
 
 /* Media Queries */
 
-@media (max-width: 999px) {
+@media (max-width: 768px) {
     
     .container-sobrenos{
         padding: 20px;
@@ -419,7 +509,7 @@
     
 }
 
-@media (max-width: 999px) {
+@media (max-width: 480px) {
     .container-cards {
         padding: 10px;
         margin-top: 2%;
