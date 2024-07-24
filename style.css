@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: #b5ccd6;
+    background-color: #b0c4cc;
 }
 
 header{
@@ -309,6 +309,79 @@ main{
     border: 3px solid #5BC0EB;
 }
 
+.container-instituicoes-voluntariado{
+    position: relative;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-instituicoes-voluntariado .card-instituicoes-voluntariado{
+    background-color: white;
+    max-width: 1000px;
+    display: flex;
+    padding: 30px 20px;
+    margin-top: 2%;
+    border-radius: 20px;
+    border: 5px solid #5BC0EB;
+}
+
+.container-instituicoes-voluntariado .card-instituicoes-voluntariado .img-instituicoes-voluntariado img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.container-instituicoes-voluntariado .card-instituicoes-voluntariado .img-instituicoes-voluntariado img:hover{
+    transform: scale(1.1);
+}
+
+.container-instituicoes-voluntariado h1{
+    text-align: center;
+    font-family: "Lovelo";
+}
+
+.container-instituicoes-voluntariado p{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-button-instituicoes-voluntariado button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button-instituicoes-voluntariado{
+    background-color: #5BC0EB;
+    font-family: "Lovelo";
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.button-instituicoes-voluntariado:hover{
+    transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
 
     .logo h1{
@@ -464,7 +537,17 @@ main{
     text-align: center;
 }
 
+.container-titulo-instituicoes-voluntariado{
+    font-size: 14px;
+    text-align: center;
+    margin-top: -2%
+}
+
 .container-titulo-instituicoes .subtitulo-objetivo-instituicoes{
+    font-family: "Lovelo";
+}
+
+.container-titulo-instituicoes-voluntariado .subtitulo-objetivo-instituicoes-voluntariado{
     font-family: "Lovelo";
 }
 
@@ -550,11 +633,18 @@ main{
         padding: 20px;
         margin-top: 10%;
     }
+
     .container-instituicoes{
         padding: 20px 10px;
         margin-top: 15%;
         max-width: 100%;
         left: 2.5%;
+    }
+
+    .container-instituicoes-voluntariado{
+        padding: 20px 10px;
+        margin-top: 15%;
+        max-width: 100%;
     }
 
     .container-cards .card {
@@ -574,8 +664,22 @@ main{
     .container-instituicoes{
         margin-top: -7%;
     }
+    
+    .container-instituicoes-voluntariado{
+        margin-top: -7%;
+    }
+
+    .container-instituicoes-voluntariado .card-instituicoes-voluntariado{
+        width: 500px;
+    }
 
     .container-instituicoes .card-instituicoes .img-instituicoes{
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+    }
+
+    .container-instituicoes-voluntariado .card-instituicoes-voluntariado .img-instituicoes-voluntariado{
         width: 100%;
         max-width: 500px;
         height: 100%;
@@ -586,7 +690,16 @@ main{
         height: 10%;
     }
 
+    .container-instituicoes-voluntariado .card-instituicoes-voluntariado .img-instituicoes-voluntariado img{
+        width: 50%;
+        height: 10%;
+    }
+
     .container-instituicoes .card-instituicoes .img-instituicoes img:hover{
+        transform: scale(1.01);
+    }
+
+    .container-instituicoes-voluntariado .card-instituicoes-voluntariado .img-instituicoes-voluntariado img:hover{
         transform: scale(1.01);
     }
 
