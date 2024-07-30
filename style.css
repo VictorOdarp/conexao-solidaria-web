@@ -390,11 +390,16 @@ main{
     
     .container-cards-doacoes {
         margin-top: 15%;
-        padding: 0px 0px;
+    }
+
+    .container-cards-doacoes .card-doacoes .imgBx-doacoes {
+        width: 100%;
+        max-width: 200px;
+        height: 260px;
+        left: 10px;
     }
 
     .container-cards-volutariado {
-        padding: 0px 0px;
         margin-top: 15%;
     }
 
@@ -642,15 +647,6 @@ main{
     .container-instituicoes{
         padding: 0px 0px;
         margin-top: 15%;
-        max-width: 100%;
-        left: 2.5%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .container-instituicoes-voluntariado{
-        padding: 0px;
-        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -668,12 +664,6 @@ main{
         height: 200px;
         left: 10px;
     }
-
-    .container-instituicoes{
-        margin-top: -7%;
-        padding: 0px 0px;
-    }
-    
 
     .container-instituicoes-voluntariado .card-instituicoes-voluntariado{
         width: 500px;
@@ -709,10 +699,6 @@ main{
         transform: scale(1.01);
     }
 
-    main{
-        height: 45vh;
-    }
-
     .container-button button{
         font-size: 18px;
         width: 200px;
@@ -724,17 +710,6 @@ main{
 
     .button-doeAgora:hover{
         font-size: 20px;
-    }
-
-    header{
-        width: 100%;
-    }
-
-    main{
-        margin-top: -1%;
-        object-fit: cover;
-        height: 50vh;
-        width: 100%;
     }
 
     .container-rodapé {
@@ -754,6 +729,9 @@ main{
         font-family: "Lovelo";
     }
     
+    .container-titulo-instituicoes-voluntariado{
+        padding: 40px;
+    }
     
 }
 
@@ -797,20 +775,15 @@ main{
         font-size: 20px;
     }
 
-    .container-titulo-instituicoes .subtitulo-objetivo-instituicoes{
-        max-width: 100%;
-        width: 1000px;
-    }
-
     header{
-        width: 105%;
+        width: 100%;
     }
 
     main{
         margin-top: -1%;
         object-fit: cover;
         height: 50vh;
-        width: 105%;
+        width: 100%;
     }
 
     .container-rodapé {
