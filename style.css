@@ -91,9 +91,7 @@ main{
 .container-sobrenos{
     text-align: center;
     margin-top: 2%;
-    width: 100%;
     height: 50px;
-    border-radius: 12px;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -207,8 +205,6 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: -3%;
-    padding: 30px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -387,9 +383,9 @@ main{
     body{
         overflow-x: hidden;
     }
-    
-    .container-cards-doacoes {
-        margin-top: 15%;
+
+    .container-doacoes {
+        padding: 30px;
     }
 
     .container-cards-doacoes .card-doacoes .imgBx-doacoes {
@@ -500,14 +496,6 @@ main{
         margin-top: 17%;
         width: 100%;
         height: 340px;
-    }
-
-    .container-doacoes{
-        margin-top: 2%;
-    }
-
-    .container-doacoes .subtitulo-objetivo{
-        top: 30px;
     }
 }
 
@@ -634,19 +622,10 @@ main{
     }
     
     .container-sobrenos{
-        padding: 0px;
-        width: 70%;
+        padding: 15px;
     }
     .container-cards {
         margin-top: 10%;
-        padding: 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .container-instituicoes{
-        padding: 0px 0px;
-        margin-top: 15%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -730,7 +709,11 @@ main{
     }
     
     .container-titulo-instituicoes-voluntariado{
-        padding: 40px;
+        padding: 30px;
+    }
+
+    .container-titulo-instituicoes{
+        padding: 15px;
     }
     
 }
@@ -743,7 +726,7 @@ main{
     }
     .container-cards {
         padding: 0px;
-        margin-top: 2%;
+        margin-top: 10%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -781,7 +764,6 @@ main{
 
     main{
         margin-top: -1%;
-        object-fit: cover;
         height: 50vh;
         width: 100%;
     }
