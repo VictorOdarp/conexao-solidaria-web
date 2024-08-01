@@ -74,6 +74,7 @@ header{
     background-color: #5BC0EB;
     padding: 10px 15px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .doe-button button a{
@@ -207,6 +208,7 @@ main{
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -2%;
 }
 
 .container-cards-doacoes .card-doacoes {
@@ -467,7 +469,7 @@ main{
 
 }
 
-@media (max-width: 468px) {
+@media (max-width: 1024px) {
 
     body{
         overflow-x: hidden;
@@ -502,12 +504,14 @@ main{
 .container-titulo-instituicoes{
     font-size: 14px;
     text-align: center;
+    margin-top: 2%;
 }
 
 .container-titulo-instituicoes-voluntariado{
     font-size: 14px;
     text-align: center;
-    margin-top: -2%
+    margin-top: -2%;
+    padding: 20px 20px;
 }
 
 .container-titulo-instituicoes .subtitulo-objetivo-instituicoes{
@@ -718,7 +722,7 @@ main{
     
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
 
 
     body{
@@ -758,14 +762,9 @@ main{
         font-size: 20px;
     }
 
-    header{
-        width: 100%;
-    }
-
     main{
         margin-top: -1%;
         height: 50vh;
-        width: 100%;
     }
 
     .container-rodapé {
