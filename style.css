@@ -265,12 +265,14 @@ main{
 
 .container-cards-volutariado {
     position: static;
-    width: 100%;
-    max-width: 100%;
+    max-width: 1100px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
 }
 
 .container-cards-volutariado .card-volutariado {
@@ -292,6 +294,7 @@ main{
 .container-cards-volutariado .card-volutariado .imgBx-volutariado {
     position: relative;
     width: 100%;
+    max-width: 260px;
     height: 260px;
     top: -60px;
     left: 20px;
@@ -379,7 +382,7 @@ main{
 @media (max-width: 768px) {
 
     .logo h1{
-        font-size: 19px;
+        font-size: 18px;
     }
 
     body{
@@ -387,7 +390,12 @@ main{
     }
 
     .container-doacoes {
-        padding: 30px;
+        padding: 10px;
+    }
+
+
+    .container-cards-doacoes{
+        margin-top: 5%;
     }
 
     .container-cards-doacoes .card-doacoes .imgBx-doacoes {
@@ -469,14 +477,14 @@ main{
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 468px) {
 
     body{
         overflow-x: hidden;
     }
 
     .logo h1{
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .container-volutariado{
@@ -626,10 +634,10 @@ main{
     }
     
     .container-sobrenos{
-        padding: 15px;
+        padding: 60px;
+        margin-top: -7%;
     }
     .container-cards {
-        margin-top: 10%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -722,7 +730,7 @@ main{
     
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 468px) {
 
 
     body{
@@ -750,18 +758,6 @@ main{
         top: -40px;
     }
 
-    .container-button button{
-        font-size: 18px;
-        width: 200px;
-        height: 55px;
-        top: 45%;
-        left: 50%;
-    }
-
-    .button-doeAgora:hover{
-        font-size: 20px;
-    }
-
     main{
         margin-top: -1%;
         height: 50vh;
@@ -785,3 +781,64 @@ main{
     }
     
 }
+@media (max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
+    .container-cards {
+        padding: 0px;
+        margin-top: -3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-cards .card {
+        margin: 15px 10px;
+        margin-top: 10%;
+        padding: 10px 5px;
+        height: 480px;
+    }
+
+    .container-cards .card .imgBx {
+        width: 100%;
+        max-width: 300px;
+        height: 150px;
+        left: 1px;
+        top: -40px;
+    }
+
+    .container-doacoes{
+        margin-top: 3%;
+    }
+
+    .container-titulo-instituicoes-voluntariado{
+        padding: 50px;
+    }
+
+    .container-instituicoes-voluntariado{
+        margin-top: -2%;
+    }
+
+    main{
+        margin-top: -1%;
+        height: 50vh;
+    }
+
+    .container-rodapé {
+        background-color: rgb(94, 6, 6); /* Cor de fundo para o rodapé */
+        color: white; /* Cor do texto */
+        text-align: center; /* Alinhamento do texto */
+        padding: 5px; /* Espaçamento interno */
+        width: 100%; /* Largura completa */
+        bottom: 0%; /* Fica fixo no fundo da página */
+        border-radius: 10px;
+    }
+    
+    footer p {
+        margin: 0; /* Remove margens padrão */
+        font-size: 14px; /* Tamanho da fonte */
+        line-height: 1.5; /* Altura da linha */
+        font-family: "Lovelo";
+    }
+}
+
