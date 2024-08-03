@@ -518,7 +518,6 @@ main{
 .container-titulo-instituicoes-voluntariado{
     font-size: 14px;
     text-align: center;
-    margin-top: -2%;
     padding: 20px 20px;
 }
 
@@ -759,6 +758,8 @@ main{
     }
 
     main{
+        background: url(imagens/CONEXÃOmobile1\ \(1\).png) no-repeat center center;
+        background-size: cover;
         margin-top: -1%;
         height: 50vh;
     }
@@ -811,12 +812,18 @@ main{
         margin-top: 3%;
     }
 
+    .container-instituicoes{
+        margin: 10px;
+    }
+
     .container-titulo-instituicoes-voluntariado{
-        padding: 50px;
+        padding: 40px;
+        margin-top: -2%;
     }
 
     .container-instituicoes-voluntariado{
         margin-top: -2%;
+        margin: 2px;
     }
 
     main{
