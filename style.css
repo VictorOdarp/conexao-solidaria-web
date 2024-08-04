@@ -10,6 +10,12 @@
     src: url("fontes/Lovelo\ Black.otf") format("opentype"), url("fontes/Lovelo\ Line\ Bold.otf"), format("truetype"), url("fontes/Lovelo\ Line\ Light.otf");
     font-weight: normal;
     font-style: normal;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -474,7 +480,6 @@ main{
         scale: 1.5;
         margin-top: 12%;
     }
-
 }
 
 @media (max-width: 468px) {
@@ -655,6 +660,7 @@ main{
         left: 10px;
     }
 
+
     .container-instituicoes-voluntariado .card-instituicoes-voluntariado{
         width: 500px;
     }
@@ -730,7 +736,6 @@ main{
 }
 
 @media (max-width: 468px) {
-
 
     body{
         overflow-x: hidden;
