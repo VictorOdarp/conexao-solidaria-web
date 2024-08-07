@@ -39,7 +39,7 @@ header{
     align-items: center;
 }
 
-.logo h1{
+.logo a{
     color: whitesmoke;
     font-family: "Lovelo";
     font-size: 20px;
@@ -81,12 +81,7 @@ header{
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.doe-button button a{
-    text-decoration: none;
     color: whitesmoke;
-    font-weight: 500;
 }
 
 main{
@@ -387,7 +382,7 @@ main{
 
 @media (max-width: 768px) {
 
-    .logo h1{
+    .logo a{
         font-size: 18px;
     }
 
@@ -488,7 +483,7 @@ main{
         overflow-x: hidden;
     }
 
-    .logo h1{
+    .logo a{
         font-size: 18px;
     }
 
