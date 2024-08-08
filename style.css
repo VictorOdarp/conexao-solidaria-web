@@ -721,7 +721,8 @@ main{
     }
     
     .container-titulo-instituicoes-voluntariado{
-        padding: 30px;
+        padding: 15px;
+        margin-top: 5%;
     }
 
     .container-titulo-instituicoes{
@@ -814,11 +815,6 @@ main{
 
     .container-instituicoes{
         margin: 10px;
-    }
-
-    .container-titulo-instituicoes-voluntariado{
-        padding: 40px;
-        margin-top: -2%;
     }
 
     .container-instituicoes-voluntariado{
