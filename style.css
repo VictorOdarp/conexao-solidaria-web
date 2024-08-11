@@ -250,7 +250,6 @@ main{
 .container-volutariado p {
     font-size: 22px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: block;
     margin-right: auto;
     margin-left: auto;
 }
@@ -607,7 +606,7 @@ main{
     color: whitesmoke; /* Cor do texto */
     text-align: center; /* Alinhamento do texto */
     padding: 10px; /* Espaçamento interno */
-    width: 100%; /* Largura completa */
+    width: 100%;
     bottom: 0%; /* Fica fixo no fundo da página */
     margin-top: 5%;
     border-radius: 10px;
@@ -626,7 +625,22 @@ main{
     font-size: 18px;
 }
 
-@media (max-width: 768px) {
+.button-topo{
+    margin-left: 90%;
+    top: 90%;
+    position: sticky;
+}
+
+.button-topo a{
+    background-color: rgb(94, 6, 6);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: solid 2px #5BC0EB;
+}
+
+
+@media screen and (max-width: 768px) {
 
     body{
         overflow-x: hidden;
@@ -728,10 +742,13 @@ main{
     .container-titulo-instituicoes{
         padding: 15px;
     }
-    
+
+    .button-topo{
+        display: none;
+    }
 }
 
-@media (max-width: 468px) {
+@media screen and (max-width: 468px) {
 
     body{
         overflow-x: hidden;
@@ -781,9 +798,13 @@ main{
         line-height: 1.5; /* Altura da linha */
         font-family: "Lovelo";
     }
+
+    .button-topo{
+        display: none;
+    }
     
 }
-@media (max-width: 1024px){
+@media screen and (max-width: 1024px){
     body{
         overflow-x: hidden;
     }
@@ -842,6 +863,10 @@ main{
         font-size: 14px; /* Tamanho da fonte */
         line-height: 1.5; /* Altura da linha */
         font-family: "Lovelo";
+    }
+
+    .button-topo{
+        display: none;
     }
 }
 
